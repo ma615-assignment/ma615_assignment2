@@ -11,14 +11,6 @@ m_empl <- male_employment %>%
 m_em_rate <- m_empl %>% 
   filter(country == "United States") %>% as_tibble()
 
-ggplot(data= m_em_rate, aes(x = year, y = rate))+
-  geom_point(col="blue")+
-  scale_x_discrete(label = function(x) str_sub(1990:2021))+
-  labs(x="year", 
-       y = " age 15+ male employment rate",
-       subtitle = "U.S. Age 15+ Male Employment Rate ",
-       caption = "Source: Gapminder.org") +
-  theme_gray()
 
 # female employment of age 15+ 
 
@@ -30,15 +22,6 @@ f_empl <- female_employment %>%
 
 f_em_rate <- f_empl %>% 
   filter(country == "United States") %>% as_tibble()
-
-ggplot(data= f_em_rate, aes(x = year, y = rate))+
-  geom_point(col="red")+
-  scale_x_discrete(label = function(x) str_sub(1990:2021))+
-  labs(x="year", 
-       y = " age 15+ female employment rate",
-       subtitle = "U.S. Age 15+ Female Employment Rate ",
-       caption = "Source: Gapminder.org") +
-  theme_gray()
 
 
 # combine male and female employment rate in one tibble 
