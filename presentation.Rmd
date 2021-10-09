@@ -26,15 +26,15 @@ head(employment)
 ```{r, echo=FALSE}
 tail(employment)
 ```
-## Visualization with geom_line and geom_point
--China vs. Canada Male Employment Rate of Age 15+
+
+## China vs. Canada Male Employment Rate of Age 15+
 
 -It's interesting to see that China male employment rate started at very height percentage, but dropped so quick in recent year. While Canada male employment seems to have more changes over the time especially in during the recession of 2008. 
 
 -In addition, we see the last data was 2021 and we know CoVid-19 is the main reason for the drop down of employment rate. However, China seems to recover well during the pandemic, I wondered if there are other reasons for the decline of male employment rate in China.
 
 ```{r, echo=FALSE}
-plot(plot1)
+plot1
 ```
 
 ## China vs. Canada Female Employment Rate of Age 15+
@@ -43,6 +43,16 @@ plot(plot1)
 -I wondered if there are more jobs that available for women than for men in Canada and if so, what kinds of job would that be? 
 
 ```{r, echo=FALSE}
-plot(plot2)
+plot2
 ```
 
+## Show all four variables in one ggplot
+-from top to bottoms, lines are: China_male, China_female, Canada_male, Canada_female
+
+-By showing all four variables on same graph, we can see that Canada male employment rate does not seem like it is decreasing, it is stable over the years.
+
+China female employment rate is the one decreasing very fast over the years. 
+
+```{r, echo=FALSE}
+plot3
+```
