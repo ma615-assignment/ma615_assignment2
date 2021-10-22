@@ -4,10 +4,10 @@ library(dplyr)
 
 #started with reading both data sets that I downloaded from gapminder.org
 
-male_employment <- 
-  read.csv("~/desktop/MA_615/ma615_assignment2/males_aged_15plus_employment_rate_percent.csv", header=TRUE, check.names = FALSE)
-female_employment<- 
-  read.csv("~/desktop/MA_615/ma615_assignment2/females_aged_15plus_employment_rate_percent.csv", 
+female_employment <- 
+  read.csv("https://raw.githubusercontent.com/ma615-assignment/ma615_assignment2/main/females_aged_15plus_employment_rate_percent.csv", header=TRUE, check.names = FALSE)
+male_employment<- 
+  read.csv("https://raw.githubusercontent.com/ma615-assignment/ma615_assignment2/main/males_aged_15plus_employment_rate_percent.csv", 
            header=TRUE, check.names = FALSE)
 
 #using tidyr command to separate two variables with given names
