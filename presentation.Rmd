@@ -43,7 +43,7 @@ plot1()
 -I wondered if there are more jobs that available for women than for men in Canada and if so, what kinds of job would that be? 
 
 ```{r, echo=FALSE}
-plot2
+plot2()
 ```
 
 ## Show all four variables in one ggplot
