@@ -1,4 +1,10 @@
-#started with sourcing my wrangling code
+#' The author should wrangle data and then use the data to produce plots instead of only extracting data needed by the plot. 
+#' For example, the data should include all the countries in the origin table and set parameters in the function. But the author only chooses China and Canada in a data frame.
+#' In a function, the condition or data selection can complete by setting parameters so it will be convenient to different plot values.
+
+
+# started with sourcing my wrangling code
+
 source(file = "wrangling_code.R", echo = TRUE)
 
 #using ifelse() function to help me identifying two country on the plot
