@@ -34,7 +34,7 @@ tail(employment)
 -In addition, we see the last data was 2021 and we know CoVid-19 is the main reason for the drop down of employment rate. However, China seems to recover well during the pandemic, I wondered if there are other reasons for the decline of male employment rate in China.
 
 ```{r, echo=FALSE}
-plot1
+plot1()
 ```
 
 ## China vs. Canada Female Employment Rate of Age 15+
@@ -43,7 +43,7 @@ plot1
 -I wondered if there are more jobs that available for women than for men in Canada and if so, what kinds of job would that be? 
 
 ```{r, echo=FALSE}
-plot2
+plot2()
 ```
 
 ## Show all four variables in one ggplot
